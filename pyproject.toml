@@ -15,3 +15,11 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 90
 target-version = ['py311']
+
+
+[tool.isort]
+profile = "black"
+line_length = 90
+multi_line_output = 3
+skip_gitignore = true
+src_paths = ["src"]

@@ -11,3 +11,11 @@ class BinaryTree:
         else:
             sub_tree.left_child = self.left_child
             self.left_child = sub_tree
+
+    def insert_right(self, value) -> None:
+        sub_tree = BinaryTree(value)
+        if self.right_child is None:
+            self.right_child = sub_tree
+        else:
+            sub_tree.right_child = self.right_child
+            self.right_child = sub_tree
